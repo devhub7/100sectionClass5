@@ -1,0 +1,74 @@
+.section-padding {
+	padding: 50px 0;
+}
+.section-bg {
+    position: relative;
+}
+
+.section-bg:after {
+    position: absolute;
+    content: "";
+    background-image: url(assets/img/bg.jpg);
+    width: 45%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+h2.section-titel {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-tite span {
+    color: dodgerblue;
+}
+
+h2 span {
+    color: #18bf5d;
+}
+.styled-faq  {
+	min-height: 500px;
+}
+.styled-faq .accordion > .card {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    margin-bottom: 20px
+}
+.styled-faq .accordion > .card:not(:first-of-type):not(:last-of-type) {
+	border-bottom: 1px solid #ddd;
+}
+
+.styled-faq .card-header:first-child {
+	border-radius: 0;
+}
+.styled-faq .card-header {
+	background-color: transparent;
+	border-bottom: transparent;
+	padding: 0;
+}
+.styled-faq button.btn {
+    color: #333;
+	text-decoration: none;
+	text-align: left;
+	padding: 15px;
+	width: 100%;
+	position: realative;
+	font-weight: 600;
+}
+
+.styled-faq button.btn i.fas {
+	float: right;
+    font-size: 145%;
+    line-height: 23px;
+	display: none;
+}
+.styled-faq button.btn[aria-expanded="true"] i.fas.fa-angle-up {
+	display: block;
+}
+.styled-faq button.btn[aria-expanded="false"] i.fas.fa-angle-down {
+	display: block;
+}
